@@ -7,6 +7,7 @@ namespace EX14Lists
     {
         static void Main(string[] args)
         {
+            /*
             List<int> ages = new List<int>();
 
             ages.Add(5);
@@ -22,6 +23,9 @@ namespace EX14Lists
             names.Add("Johannes");
             names.Add("Anton");
             names.Add("Nicklas");
+
+            names.Insert(3, "Anders");
+            names.Insert(3, "Lars");
 
             List<double> percentages = new List<double>() {0.75, 0.23, 0.86, 0.17};
 
@@ -45,6 +49,31 @@ namespace EX14Lists
             foreach (bool isMarried in areMarried)
             {
                 Console.WriteLine(isMarried);
+            }
+            */
+
+            //Opgave 14.5
+
+            List<int> ages = new List<int>() { 13, 14, 13, 15, 13, 14, 14, 15 };
+
+            foreach (int age in ages)
+            {
+                Console.WriteLine(age);
+            }
+
+            ages.Remove(13);
+            ages.Remove(15);
+
+            foreach (int age in ages)
+            {
+                Console.WriteLine(age);
+            }
+
+            ages.RemoveAt(3);
+
+            foreach (int age in ages)
+            {
+                Console.WriteLine(age);
             }
         }
     }
